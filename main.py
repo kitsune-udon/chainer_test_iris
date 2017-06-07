@@ -59,4 +59,4 @@ def predict(model, v):
     return F.softmax(z).data.argmax(axis=1)[0]
 
 v = [1., 1., 1., 1.]
-print "{} is classified to {}.".format(v, predict(model, v))
+print ("{} is classified to {}.".format(v, predict(model, v)))
